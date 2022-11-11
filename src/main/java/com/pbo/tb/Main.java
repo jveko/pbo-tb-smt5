@@ -2,8 +2,8 @@ package com.pbo.tb;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.io.IOException;
 public class Main extends Application {
 
     private static Stage primaryStage;
-    private static Parent parent;
+    private static Pane root;
     @Override
     public void start(Stage stage) throws IOException {
         primaryStage = stage;
@@ -23,8 +23,8 @@ public class Main extends Application {
     public static void showLoginView() throws IOException {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("LoginView.fxml"));
-        parent = loader.load();
-        Scene scene = new Scene(parent,  800, 500);
+        root = loader.load();
+        Scene scene = new Scene(root,  800, 500);
         primaryStage.setTitle("Login Form");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
@@ -32,10 +32,10 @@ public class Main extends Application {
     }
 
     public static void showMainView() throws IOException {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("MainView.fxml"));
-        parent = loader.load();
-        Scene scene = new Scene(parent,  800, 500);
+        FXMLLoader mainLoader = new FXMLLoader();
+        mainLoader.setLocation(Main.class.getResource("MainView.fxml"));
+        root = mainLoader.load();
+        Scene scene = new Scene(root,  800, 500);
         primaryStage.setTitle("Login Form");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);

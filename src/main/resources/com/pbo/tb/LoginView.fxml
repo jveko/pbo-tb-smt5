@@ -16,7 +16,6 @@
         <ColumnConstraints minWidth="200" prefWidth="200"
                            maxWidth="Infinity" hgrow="ALWAYS"/>
     </columnConstraints>
-    <!-- Add Header Label -->
     <Label text="Login Form (FXML)" GridPane.columnIndex="0"
            GridPane.rowIndex="0" GridPane.columnSpan="2"
            GridPane.rowSpan="1" GridPane.halignment="CENTER" >
@@ -27,19 +26,14 @@
             <Insets top="20" bottom="20"/>
         </GridPane.margin>
     </Label>
-    <!-- Add Email Label -->
     <Label text="Email : " GridPane.columnIndex="0"
            GridPane.rowIndex="2"/>
-    <!-- Add Email Text Field -->
     <TextField fx:id="emailField" prefHeight="40"
                GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-    <!-- Add Password Label -->
     <Label text="Password : " GridPane.columnIndex="0"
            GridPane.rowIndex="3"/>
-    <!-- Add Password Field -->
     <PasswordField fx:id="passwordField" prefHeight="40"
                    GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-    <!-- Add Submit Button -->
     <Button fx:id="submitButton" text="Submit"
             prefWidth="100" prefHeight="40" defaultButton="true"
             GridPane.columnIndex="0" GridPane.rowIndex="4"
@@ -51,15 +45,3 @@
         </GridPane.margin>
     </Button>
 </GridPane>
-<!--<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"-->
-<!--      fx:controller="com.pbo.tb.LoginController">-->
-<!--    <padding>-->
-<!--        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>-->
-<!--    </padding>-->
-
-<!--    <Label text="Email ID : " GridPane.columnIndex="0"-->
-<!--           GridPane.rowIndex="2" ></Label>-->
-<!--    <TextField fx:id="emailField" prefHeight="40"/>-->
-<!--    <Label fx:id="welcomeText"/>-->
-<!--    <Button text="Hello!" onAction="#onHelloButtonClick"/>-->
-<!--</VBox>-->
