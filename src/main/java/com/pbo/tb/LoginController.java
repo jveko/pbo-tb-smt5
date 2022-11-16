@@ -27,20 +27,6 @@ public class LoginController implements Initializable {
 
         Window owner = submitButton.getScene().getWindow();
 
-        System.out.println(emailField.getText());
-        System.out.println(passwordField.getText());
-
-        if (emailField.getText().isEmpty()) {
-            showAlert(Alert.AlertType.ERROR, owner, "Login Error",
-                    "Please enter your email id");
-            return;
-        }
-        if (passwordField.getText().isEmpty()) {
-            showAlert(Alert.AlertType.ERROR, owner, "Login Error",
-                    "Please enter a password");
-            return;
-        }
-
         String emailText = emailField.getText();
         String passwordText = passwordField.getText();
 

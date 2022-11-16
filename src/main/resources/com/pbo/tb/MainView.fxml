@@ -8,10 +8,10 @@
    <top>
        <MenuBar fx:id="menuBar">
            <Menu text="File">
-               <MenuItem onAction="#load" text="Load" />
-               <MenuItem onAction="#save" text="Save" />
+               <MenuItem onAction="#newHandler" text="New" />
+               <MenuItem onAction="#openHandler" text="Open" />
                <SeparatorMenuItem />
-               <MenuItem onAction="#exit" text="Quit" />
+               <MenuItem onAction="#exitHandler" text="Exit" />
            </Menu>
        </MenuBar>
    </top>

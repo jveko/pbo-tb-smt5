@@ -7,35 +7,16 @@ public class MainController  {
     @FXML
     private MenuBar menuBar ;
 
-//    public void initModel(DataModel model) {
-//        if (this.model != null) {
-//            throw new IllegalStateException("Model can only be initialized once");
-//        }
-//        this.model = model ;
-//    }
-
     @FXML
-    public void load() {
-//        FileChooser chooser = new FileChooser();
-//        File file = chooser.showOpenDialog(menuBar.getScene().getWindow());
-//        if (file != null) {
-//            try {
-//                model.loadData(file);
-//            } catch (Exception exc) {
-//                // handle exception...
-//            }
-//        }
+    public void newHandler() {
     }
 
     @FXML
-    public void save() {
-
-        // similar to load...
-
+    public void openHandler() {
     }
 
     @FXML
-    public void exit() {
+    public void exitHandler() {
         menuBar.getScene().getWindow().hide();
     }
 }
